@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    width: 399px;
+    height: 224px;
+    border: 1px solid black;
+}
+
+#personagem{
+    width: 28px;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 150px;
+}
+
+.animar{
+    animation: personagem 500ms infinite;
+}
+
+.pagina-com-imagem-de-fundo {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be703c07-fcdf-4c93-bc68-db5b6941066b/dc2ov9i-0a9507c9-2413-4771-9df0-4f94ec48aa2d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlNzAzYzA3LWZjZGYtNGM5My1iYzY4LWRiNWI2OTQxMDY2YlwvZGMyb3Y5aS0wYTk1MDdjOS0yNDEzLTQ3NzEtOWRmMC00Zjk0ZWM0OGFhMmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.R1Z7ICkhrZ5VTpT6ffFZiCcVW4PLRBpVS-Kn7Qj_Uf4');
+    background-size: 400px, 200px; 
+    background-repeat: no-repeat;
+}
+
+
+@keyframes personagem{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#quadrado{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: relative;   
+    top: 120px;
+    left: 400px;
+    animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado{
+    0%{left: 395px;}
+    100%{left: -40px;}
+}
